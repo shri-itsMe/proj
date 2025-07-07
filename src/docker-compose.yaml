@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    ports:
+      - "2005:2005"
+  python:
+    image: "python:3.12-slim"

@@ -7,6 +7,6 @@ app = FastAPI()
 app_settings = Settings()  # Load settings from config
 
 #this tells FastAPI that the function handles requests that go to the path "/" using a get
-@app.get("/")
+@app.get("/hello")
 async def root():
     return {"message": f"Hello World, welcome to {app_settings.proj_name}"}
